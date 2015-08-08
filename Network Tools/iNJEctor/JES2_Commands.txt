@@ -1,0 +1,279 @@
+Listing of JES2 Commands
+list for iNJEctor.py
+
+From: http://www-01.ibm.com/support/knowledgecenter/SSLTBW_2.1.0/com.ibm.zos.v2r1.hasa200/has2cmdr.htm
+
+Note: These commands are for z/OS 2.1 if you're running an older verion not all these commands will work.
+
+$A A - Release all jobs
+$A Job - Release held jobs
+$ACTIVATE - Activate a particular level of JES2 function
+$ADD APPL - Define a VTAM application to JES2
+$ADD CONNECT - Dynamically add network connections
+$ADD DESTID - Define a symbolic destination
+$ADD FSS - Define a functional subsystem
+$ADD JOBCLASS(jobclass) - Define a new job class
+$ADD LINE(nnnn) - Add line
+$ADD LOADMOD - Load a new Installation Load Module
+$ADD LOGON(nn) - Add a logon
+$ADD NETSRV(nnn) - Add a network server
+$ADD PROCLIB(xxxxxxxx) - Define a new dynamic PROCLIB concatenation
+$ADD PRT(nnnnn) - Define a local printer
+$ADD REDIRECT - Set redirection for commands
+$ADD RMT(nnnnn) - Add an RJE workstation
+$ADD SOCKET(xxxxxxxx) - Add a socket
+$ADD SRVCLASS(name) - Add a new permanent service class element
+$B PRT(nnnnn) and $B R(nnnnn).PR(m) - Logically backspace printer output
+$B PUN(nn) and $B R(nnnnn).PU(m) - Logically backspace punch output
+$C A - Cancel automatic commands
+$C Job - Cancel a job
+$C Lnnnn.xxn - Cancel NJE device activity
+$C O Job - Cancel output
+$C OFFn.JR - Cancel a spool offload transmitter/receiver
+$C PRT(nnnnn) and $C R(nnnnn).PR(m) - Cancel printer output
+$C PUN(nn) and $C R(nnnnn).PU(m) - Cancel punch output
+$C RDR and $C Rnnnn.RDm - Cancel reader activity
+$D A - Display information about currently active jobs
+$D ACTIVATE - Display current JES2 checkpoint level and MAS readiness for checkpoint activation to z11 level
+$D ACTRMT - Display Active RJE Workstations in a MAS
+$D APPL - Display JES2 SNA NJE applications
+$D BUFDEF - Display JES2 buffer definitions
+$D CKPTDEF - Display the checkpoint definition
+$D CKPTSPACE - Display checkpoint spaces
+$D CLASSGRP - Display class groups
+$D COMPACT - Display JES2 compaction tables
+$D CONDEF - Display console communication characteristics
+$D CONNECT - Display network connections
+$D DEBUG - Display the JES2 DEBUG option
+$D DESTDEF - Display symbolic destination settings
+$D DEStid - Display a JES2 symbolic destination
+$D ESTBYTE - Display Number of Bytes Set for Jobs and their Output
+$D ESTLNCT - Display number of lines for jobs and their output
+$D ESTPAGE - Display number of pages set for jobs and their output
+$D ESTPUN - Display number of punch pages set for jobs and their output
+$D ESTIME - Display amount of time set for jobs and their output
+$D EXIT - Display current characteristics of specified JES2 exit points
+$D F - Display the job output forms queue
+$D FSS - Display the characteristics of the specified functional subsystems
+$D INITDEF - Display the number of logical initiators currently defined
+$D INITINFO - Display initialization information
+$D I[nnmm] - Display initiator information
+$D INTRDR - Display the current INTRDR initialization statement characteristics
+$D JES2 - Display the current activity in the JES2 address space
+$D Job - Display information about specified jobs
+$D JOBCLASS(n) - Display job class characteristics
+$D JOBDEF - Display characteristics assigned to jobs
+$D JOBPRTY - Display Current Job Priority Characteristics
+$D L(nnnn).JR(n) - Display line and job receiver status
+$D L(nnnn).JT(n) - Display the job transmitter status
+$D L(nnnn).SR(n) - Display SYSOUT receiver status
+$D L(nnnn).ST(n) - Display SYSOUT transmitter status
+$D LINE(nnnnn) - Display a line
+$D LOADmod(jxxxxxxx) - Display load module information
+$D LOGON(nnn) - Display the status of JES2/VTAM interface(s) and their characteristics
+$D M - Send a message
+$D MASDEF - Display the multi-access spool environment
+$D MEMBer - Display information about MAS members
+$D MODule(jxxxxxxx) - Display assembled module information
+$D N - Display job queue information
+$D NETACCT - Display networking account numbers
+$D NETSRV(nnnnn) - Display a network server
+$D NETWORK - Display network activity
+$D NJEDEF - Display the JES2 Network Environment
+$D NODE(jnnnnnnn) - Display the characteristics of a node
+$D O Job - Display output characteristics
+$D OFF(n).JR - Display offload job receiver
+$D OFF(n).JT - Display offload job transmitter
+$D OFF(n).SR - Display offload SYSOUT receiver
+$D OFFn.ST - Display offload SYSOUT transmitter
+$D OFFLOAD - Display offload devices
+$D OPTsdef - Display start options processing definitions
+$D OUTCLASS(n) - Display output classes
+$D OUTDEF - Display output definition options
+$D OUTPRTY - Display job output priority
+$D PATH - Display paths from node to node
+$D PCE - Display status for JES2 processors
+$D PCEDEF - Display PCE definitions
+$D PRINTDEF - Display print environment characteristics
+$D PROCLIB(xxxxxxxx) - Display a PROCLIB concatenation
+$D PRT(nnnnn) and $D R(nnnnn).PR(m) - Display printers
+$D PUNCHDEF - Display punch environment characteristics
+$D PUN(nn) and $D R(nnnnn).PU(m) - Display a remote punch
+$D Q - Display the number of jobs queued
+$D R(nn).CON(mm) - Display the specified remote console
+$D RDI - Display the status of JES2-controlled internal reader
+$D RDR(nn) and $D R(nn).RD(mm) - Display command authority for a reader
+$D REBLD - Display rebuild queue information
+$D RECVopts - Display current RECVOPTS settings
+$D REDIRect - Redirect command responses
+$D REQJOBID - Display attributes of JOBID address spaces
+$D SMFDEF - Display status of SMF buffers
+$D SOCKET (xxxxxxxx) - Display the characteristics of a socket
+$D SPOOL - Display the status of spool volumes
+$D SPOOLDEF - Display the JES2 spooling environment
+$D SRVCLASS(name) - Display JES2 information for the specified service class
+$D SSI(nnn) - Display subsystem interface function information
+$D SUBTDEF - Display subtask definitions
+$D SUBNET - Display subnet connections
+$D TPDEF - Display current teleprocessing characteristics
+$D TRace(nnn) - Display current status of trace IDs
+$D TRACEDEF - Display current trace environment characteristics
+$D U - Display the status of JES2-controlled devices
+$DEL CONNect - Delete network connections
+$DEL DEStid - Delete a symbolic destination
+$DEL JOBCLASS(jobclass) - Delete a job class
+$DEL LOADmod - Remove a load module from storage
+$DEL PROCLIB(xxxxxxxx) - Delete a dynamic PROCLIB concatenation
+$E CKPTLOCK - Reset the checkpoint lock
+$E Job - Restart a job
+$E Lnnnn.xxn - Restart NJE device activity
+$E LINE(nnnnn) - Restart line activity
+$E LOGON(nn) - Restart the JES2/VTAM interface
+$E MEMBer - Perform cleanup for a failed MAS member
+$E NETSRV(nnn) - Restart a network server
+$E NETWORK - Reset current network devices
+$E OFFn.xx - Restart a spool offload transmitter
+$E PRT(nnnnn) and $E R(nnnnn).PR(m) - Restart printer activity
+$E PUN(nn) and $E R(nnnnn).PU(m) - Restart punch activity
+$F PRT(nnnnn) and $F R(nnnnn).PR(m) - Logically advance printer output
+$F PUN(nn) and $F R(nnnnn).PU(m) - Logically advance punch output
+$G A - Release a job at another node
+$G C - Cancel a job at another node
+$G D - Display job information for a job at another node
+$G H - Hold a job at another node
+$G R, OUT - Request another node to route job output
+$G R, XEQ - Request another node to route a job for execution
+$H A - Hold all jobs
+$H Job - Hold specific jobs
+$I PRT(nnnnn) and $I R(nnnnn).PR(m) - Interrupt printer activity
+$I PUN(nn) and $I R(nnnnn).PU(m) - Interrupt punch activity
+$JDDETAILS - Display details summary of jobs
+$JDHISTORY - Display history of JES2 resource usage
+$JDJES - Display non-severe incident report
+$JDMONITOR - Display current status of JES2 monitor subtasks
+$JDSTATUS - Display current status
+$JSTOP - Terminate monitor address space
+$L Job - List job output information
+$Mnn - Send commands to other MAS members
+$MSPL - Migrate spool volumes
+$Nnnnn - Send commands through the network
+$N PRT(nnnnn) and $N R(nnnnn).PR(m) - Repeat printer output
+$N PUN(nn) and $N R(nnnnn).PU(m) - Repeat punch output
+$O Job - Release or cancel held output groups
+$P - Stop JES2 processing
+$P I[nnmm] - Stop an initiator
+$P JES2 - Withdraw JES2 from the system
+$P Job - Purge a job
+$P Lnnnn.xxn - Stop an NJE device
+$P LINE(nnnnn) - Stop a line
+$P LOGON(nnnnn) - Stop the JES2/VTAM interface
+$P NETSRV(nnnnn) - Stop a network server
+$P O Job - Purge a job's output
+$P NETWORK - Purge current network devices
+$P OFFn.xx - Stop an offload transmitter/receiver
+$P OFFLOADn - Stop an offload device
+$P PRT(nnnnn) and $P R(nnnnn).PR(m) - Stop a printer
+$P PUN(nn) and $P R(nnnnn).PU(m) - Stop a punch
+$P RDRnn and $P Rnnnn.RDm - Stop a reader
+$P RMT(nnnnn) - Terminate a remote terminal connection
+$P SPOOL - Drain a spool volume
+$P SRVCLASS(name) - Drain JES2 processing for a given service class
+$P TRace - Stop a trace ID
+$P XEQ - Prevents JES2 and WLM-controlled initiators from selecting work
+$R - Route job output
+$R XEQ - Route specific jobs for execution
+$S - Start system activity
+$S A - Start automatic command processing
+$S I[vvvv] - Start an initiator
+$S Job - Initiate a batch job into execution
+$S Lnnnn.xxn - Start an NJE device
+$S LINE(nnnn) - Start a line
+$S LOGON - Start the JES2/VTAM interface
+$S N - Start node communication on a BSC line
+$S N - Start node communication on an SNA line
+$S N - Start node communication on a TCP/IP line
+$S NETSRV(nnn) - Start a network server
+$S NETWORK - Start automatic device restart and NJE connection processing
+$S OFFn.xx - Start offload transmitters and receivers
+$S OFFLOADn - Start an offload device
+$S PRT(nnnnn) and $S R(nnnnn).PR(m) - Start a printer
+$S PUN(nn) and $S R(nnnnn).PU(m) - Start a punch
+$S RDRnn and $Rnnnn.RDm - Start a reader
+$S RMT(nnnnn) - Automatically connect a remote terminal
+$S SPOOL - Start a spool volume
+$S SRVCLASS - Start JES2 processing for a given service class
+$S TRACE(nn) - Start a trace ID
+$S XEQ - Allow JES2 and WLM-controlled initiators to select work
+$T A - Display, specify, and modify automatic commands
+$T APPL - Control JES2 applications
+$T BUFDEF - Control local buffers
+$T CKPTDEF - Set the checkpoint definition
+$T CKPTSPACE - Set the checkpoint space
+$T CONDEF - Set console communication characteristics
+$T CONNect - Change static network connections
+$T DEBUG - Set the JES2 DEBUG option
+$T DESTDEF - Control JES2 symbolic destination displays
+$T DEStid - Control a JES2 symbolic destination
+$T ESTBYTE - Control the default spool space utilization per job
+$T ESTIME - Control the default execution time
+$T ESTLNCT - Control the default print line count per job
+$T ESTPAGE - Control the default page count per job
+$T ESTPUN - Control the default punched card output per job
+$T EXIT(nnn) - Control JES2 installation exit points
+$T FSS - Control a functional subsystem
+$T Init(nnmm) - Control initiators
+$T INTRDR - Control internal readers
+$T Job - Change a job's class, scheduling priority, or affinity
+$T JOBCLASS - Set job class characteristics
+$T JOBDEF - Set job processing characteristics
+$T JOBPRTY(n) - Set job scheduling characteristics
+$T L(nn).JT(nn) - Specify network job transmitter characteristics
+$T L(nnnn).ST(n) - Specify network SYSOUT transmitter characteristics
+$T LINE(nnnnn) - Control a line
+$T LOADmod - Refresh a load module from storage
+$T LOGON(nnn) - Control the JES2/VTAM interface
+$T MASDEF - Control the multi-access spool environment
+$T MEMBer - Change a member's operational mode
+$T NETSRV(nnnnn) - Modify the attributes of a network server
+$T NJEDEF - Control JES2 network environment
+$T NODE(jnnnnnnn) - Set the characteristics of a node
+$T NUM - Set the JES2 internal job numbers
+$T O Job - Set output characteristics
+$T OFF(n).JR - Set offload job receiver characteristics
+$T OFF(n).JT - Set offload job transmitter characteristics
+$T OFF(n).SR - Set offload SYSOUT receiver characteristics
+$T OFF(n).ST - Set offload SYSOUT transmitter characteristics
+$T OFFLOAD(n) - Set offload device characteristics
+$T OUTCLASS(n) - Set SYSOUT class characteristics
+$T OUTDEF - Set job output characteristics
+$T OUTPRTY(n) - Set output scheduling priorities
+$T PCE - Control JES2 processors
+$T PRINTDEF - Control the JES2 print environment
+$T PROCLIB(xxxxxxxx) - Modify an existing dynamic PROCLIB concatenation
+$T PRT(nnnnn) and $T R(nnnnn).PR(m) - Control a printer
+$T PUN(nn) and $T R(nnnnn).PU(m) - Control a punch
+$T RDI - Control an internal reader
+$T RDRnn and $T Rnnnn.RDm - Control a reader
+$T RECVopts - Set JES2 recovery options
+$T REDIRect - Redirect command responses
+$T RMT(nnnnn) - Change an RJE workstation
+$T REQJOBID - Set JOBID attributes
+$T SMFDEF - Control SMF buffers
+$T SOCKET (xxxxxxxx) - Control a socket
+$T SPOOL - Modify a spool volume
+$T SPOOLDEF - Set the JES2 spooling environment
+$T SRVCLASS(name) - Modify JES2 information for the specified service class
+$T SSI(nnn) - Control the subsystem interface definition
+$T TPDEF - Set JES2 teleprocessing characteristics
+$T TRACE(nn) - Modify a trace ID
+$T TRACEDEF - Control the trace facility
+$VS - Enter MVS system commands through JES2
+$Z A - Halt automatic command processing
+$ZAPJOB - Remove job structure from job queue
+$Z I[vvvv] - Halt initiator activity
+$Z NETWORK - Halt automatic network connection and device processing and drain NJE devices
+$Z OFFLOADn - Halt offload activity
+$Z PRT(nnnnn) and $Z R(nnnnn).PR(m) - Halt printer activity
+$Z PUN(nn) and $Z R(nnnnn).PU(m) - Halt punch activity
+$Z RDRnn - Halt reader activity
+$Z SPOOL - Halt a spool volume
